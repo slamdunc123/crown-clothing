@@ -6,9 +6,13 @@ import './App.css';
 import HomePage from './components/pages/HomePage/HomePage';
 import ShopPage from './components/pages/Shop/ShopPage';
 
+// partials 
+import Header from './components/partials/Header/Header';
+
 function App() {
   return (
     <div>
+      <Header />
       <Switch>
         <Route exact path='/' component={HomePage} />
         <Route path='/shop' component={ShopPage} />
