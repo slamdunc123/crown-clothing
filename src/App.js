@@ -5,6 +5,7 @@ import './App.css';
 // components 
 import HomePage from './components/pages/HomePage/HomePage';
 import ShopPage from './components/pages/Shop/ShopPage';
+import SignInSignUp from './components/pages/SignInSignUp/SignInSignUp';
 
 // partials 
 import Header from './components/partials/Header/Header';
@@ -16,6 +17,7 @@ function App() {
       <Switch>
         <Route exact path='/' component={HomePage} />
         <Route path='/shop' component={ShopPage} />
+        <Route path='/signin' component={SignInSignUp} />
       </Switch>
     </div>
   );
